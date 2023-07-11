@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import './CarrouselSimple.css';
+const images = [
+  'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+];
 
 const CarrouselSimple = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +23,9 @@ const CarrouselSimple = ({ images }) => {
   };
   return (
     <div className="carousel">
-      <img key={currentIndex} src={images[currentIndex]} />
+      <div className="carousel-images">
+        <img key={currentIndex} src={images[currentIndex]} />
+      </div>
       <div className="slide_direction">
         <div className="left" onClick={handlePrevious}>
           <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
@@ -28,7 +38,7 @@ const CarrouselSimple = ({ images }) => {
           </svg>
         </div>
       </div>
-      <div className="indicator">
+      <div className="carousel-indicator">
         {images.map((_, index) => (
           <div
             key={index}
