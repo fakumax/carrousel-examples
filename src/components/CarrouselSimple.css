@@ -1,16 +1,21 @@
 .carousel {
+  place-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.image-container {
   position: relative;
-  max-width: 650px;
-  height: 400px;
-  margin: auto;
+  /* max-width: 650px;
+  height: 400px; */
 }
 .carousel-images {
   position: relative;
   border-radius: 10px;
-  max-width: 650px;
+  /* max-width: 650px; */
   height: 400px;
   margin: auto;
-  overflow: hidden;
 }
 .carousel-images img {
   min-width: 100%;
