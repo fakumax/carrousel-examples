@@ -18,10 +18,15 @@
   margin: auto;
 }
 .carousel-images img {
-  min-width: 100%;
+  /* min-width: 100%; */
+  width: 100%;
   height: 100%;
   border-radius: 8px;
   border: #ff00008e solid 2px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 .slide_direction {
   display: flex;
