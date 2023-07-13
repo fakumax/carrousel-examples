@@ -1,0 +1,15 @@
+.Container {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 40px;
+  margin: 0;
+}
