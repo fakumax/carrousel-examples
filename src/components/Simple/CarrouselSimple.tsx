@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './CarrouselSimple.css';
+import styles from './CarrouselSimple.module.css';
 
 const images: string[] = [
   'https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -23,25 +23,25 @@ const CarrouselSimple = () => {
     setCurrentIndex(index);
   };
   return (
-    <div className="carousel">
-      <div className="image-container">
-        <div className="carousel-images">
+    <div className={styles.carousel}>
+      <div className={styles.imageContainer}>
+        <div className={styles.carouselImages}>
           <img key={currentIndex} src={images[currentIndex]} />
         </div>
-        <div className="slide_direction">
-          <div className="left" onClick={handlePrevious}>
+        <div className={styles.slide_direction}>
+          <div className={styles.left} onClick={handlePrevious}>
             <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
               <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
             </svg>
           </div>
-          <div className="right" onClick={handleNext}>
+          <div className={styles.right} onClick={handleNext}>
             <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
               <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
             </svg>
           </div>
         </div>
       </div>
-      <div className="carousel-indicator">
+      <div className={styles.carouselIndicator}>
         {images.map((_, index: number) => (
           <div
             key={index}
