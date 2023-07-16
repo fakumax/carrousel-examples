@@ -1,7 +1,17 @@
-import React from 'react';
+import { Framer } from '@/components';
+import '../App.css';
 
-const Framer = () => {
-  return <div>Framer</div>;
+const FramerMotion = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Image Carousel using Framer Motion & CSS</h1>
+      </header>
+      <main>
+        <Framer />
+      </main>
+    </div>
+  );
 };
 
-export default Framer;
+export default FramerMotion;
