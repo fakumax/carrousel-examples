@@ -1,3 +1,4 @@
+export { default as CssSlider } from './CssSlider';
 export { default as Framer } from './Framer';
 export { default as NoMatch } from './NoMatch';
 export { default as React } from './React';

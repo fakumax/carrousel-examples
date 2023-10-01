@@ -10,6 +10,9 @@ const Navbar = () => {
             <Link to="/">React</Link>
           </li>
           <li>
+            <Link to="/css">CSS</Link>
+          </li>
+          <li>
             <Link to="/framer">Framer</Link>
           </li>
           <li>

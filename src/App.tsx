@@ -1,5 +1,5 @@
 import { Layout } from '@/components';
-import { Framer, NoMatch, React, Swiper } from '@/pages';
+import { Framer, NoMatch, React, Swiper, CssSlider } from '@/pages';
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index path="/" element={<React />} />
         <Route path="/framer" element={<Framer />} />
+        <Route path="/css" element={<CssSlider />} />
         <Route path="/swiper" element={<Swiper />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
