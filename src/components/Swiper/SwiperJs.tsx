@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 
 // Import Swiper styles
@@ -9,7 +8,7 @@ import 'swiper/css';
 import styles from './SwiperJs.module.css';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const images: string[] = [
